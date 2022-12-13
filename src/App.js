@@ -1,24 +1,36 @@
 import logo from "./logo.svg";
 import "./App.css";
-import BrandCards from "./components/cloud/Test/BrandCards";
+import { useEffect, useState } from "react";
+
+const [show, setShow] = useState(false);
 
 function App() {
   return (
-    <div className="relative w-screen h-screen bg-gray-600 gap-5 ease-in duration-200">
-      <div className="bg-gradient-to-br from-cyan-500 to-blue-500 p-10 rounded-lg shadow-xl w-80 absolute top-1 left-1">
-        <h1 className="flex flex-row text-4xl text-gray-100 pb-10 font-roboto font-thin">
-          <p className="pr-2 font-light">Tudu</p>App ®
-        </h1>
-      </div>
-      <div className="bg-gradient-to-br from-cyan-500 to-blue-500 p-10 rounded-lg shadow-xl w-80 absolute left-1 top-1/4">
-        <h1 className="flex flex-row text-4xl text-gray-100 pb-10 font-roboto font-thin">
-          <p className="pr-2 font-light">Poject</p>App ®
-        </h1>
-      </div>
-      {/* <div className="bg-purple-500 p-10 rounded-md shadow-xl absolute bottom-1 left-1">
-        <BrandCards />
-      </div> */}
-    </div>
+    <dev className="flex flex-col items-center justify-center h-screen">
+      <dev className="flex flex-row gap-x-20 h-[80px] w-[500px] rounded-md bg-blue-200 items-center justify-center">
+        <button
+          onClick={setShow}
+          className="border-2 border-blue-200 group py-1 px-4 hover:border-blue-500 rounded-md"
+        >
+          <h1 className="cursor-pointer group-hover:text-blue-500">Home</h1>
+        </button>
+        <button className="border-2 border-blue-200 group py-1 px-4 hover:border-red-500 rounded-md">
+          <h1 className="cursor-pointer group-hover:text-red-500">Server</h1>
+        </button>
+        <button className="border-2 border-blue-200 group py-1 px-4 hover:border-green-500 rounded-md">
+          <h1 className="cursor-pointer group-hover:text-green-500">Product</h1>
+        </button>
+      </dev>
+      <dev className="flex flex-row items-center justify-around h-[80px] w-[500px] pt-10">
+        <dev
+          className={`${
+            show(true) ? "hidden" : ""
+          } h-20 w-20 bg-blue-500 rounded-full`}
+        ></dev>
+        <dev className={`h-20 w-20 bg-red-500 rounded-full`}></dev>
+        <dev className={`h-20 w-20 bg-green-500 rounded-full`}></dev>
+      </dev>
+    </dev>
   );
 }
 
