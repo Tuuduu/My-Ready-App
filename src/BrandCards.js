@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 
 const BrandCards = () => {
@@ -16,23 +15,15 @@ const BrandCards = () => {
   // # 2 useState (  )
   const [text, setText] = useState("Hi Tuuduu");
 
+  const [count, setCount] = useState(0);
+
   function handleChange(e) {
     setText(e.target.value);
   }
   return (
-    <div className="flex flex-col items-center justify-center">
-      <p>You typed: {text}</p>
-      <input
-        value={text}
-        onChange={handleChange}
-        className="border border-black rounded p-1 my-5"
-      />
-      <button
-        onClick={() => setText("Hi Tuuduu")}
-        className="py-1 px-6 rounded-full bg-purple-500"
-      >
-        reset
-      </button>
+    <div className="flex flex-col items-center justify-center pt-10">
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>Click her!!</button>
     </div>
   );
 };
