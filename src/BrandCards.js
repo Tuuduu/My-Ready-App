@@ -22,8 +22,13 @@ const BrandCards = () => {
   }
   return (
     <div className="flex flex-col items-center justify-center pt-10">
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Click her!!</button>
+      <p className="pb-5 text-gray-600">{count}</p>
+      <button
+        className="py-1 px-4 rounded-lg border-2 border-gray-800 text-gray-800"
+        onClick={() => setCount(count + 1)}
+      >
+        Click here!!
+      </button>
     </div>
   );
 };
