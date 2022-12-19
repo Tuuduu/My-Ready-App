@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import BrandCards from "./BrandCards";
+import Javaif from "./components/JavaIf";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -55,6 +56,9 @@ function App() {
       </dev>
       <div className="pt-20">
         <BrandCards />
+      </div>
+      <div>
+        <Javaif />
       </div>
     </dev>
   );
