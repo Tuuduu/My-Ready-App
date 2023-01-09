@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Javaif = () => {
-  const arrayTem01 = ["world", "Earth", "Mongolia", "Ulaanbaatar"];
+  const [count, setCount] = useState(0);
 
-  console.log("arrayTem01 = ", arrayTem01);
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 0);
+    }, 1000);
+  });
 
-  if (arrayTem01.length) return <h1>Javaif</h1>;
+  console.log("count ", count);
+
+  return <h1>JavaScriptif {count}</h1>;
 };
-
 export default Javaif;
