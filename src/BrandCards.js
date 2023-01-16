@@ -13,13 +13,13 @@ const BrandCards = () => {
   // }
 
   // # 2 useState (  )
-  const [text, setText] = useState("Hi Tuuduu");
+  // const [text, setText] = useState("Hi Tuuduu");
 
   const [count, setCount] = useState(0);
 
-  function handleChange(e) {
-    setText(e.target.value);
-  }
+  // function handleChange(e) {
+  //   setText(e.target.value);
+  // }
   return (
     <div className="flex flex-col items-center justify-center pt-10">
       <p className="pb-5 text-gray-600">{count}</p>

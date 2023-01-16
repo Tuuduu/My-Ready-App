@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
 const Javaif = () => {
-  const [count, setCount] = useState(0);
+  // var module = function (number) {
+  //   var mod;
+  //   if (number < 0) mod = -number;
+  //   else mod = number;
 
-  useEffect(() => {
-    setTimeout(() => {
-      setCount((count) => count + 0);
-    }, 1000);
-  });
+  //   console.log(number + " toonii module " + mod);
+  // };
 
-  console.log("count ", count);
+  // module(-23);
+  // modul(213);
 
-  return <h1>JavaScriptif {count}</h1>;
+  // function modul(number) {
+  //   console.log("this is working the Statement function");
+  // }
+
+  return <h1>JavaScriptif {}</h1>;
 };
 export default Javaif;
