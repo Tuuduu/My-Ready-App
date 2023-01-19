@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 // import Anit from "./components/Anit";
-import anime from "animejs/lib/anime.es.js";
+// import anime from "animejs/lib/anime.es.js";
 // import Javalf from "./components/JavaIf";
 // import { useState } from "react";
 
@@ -49,11 +49,26 @@ function App() {
   // if (toggle === true) {
   //   // animatBlocks();
   //   animatCount();
+  // var lastName = "Ganbat";
+  // alert("global хэсгээс дуудаж байна.");
+
+  // function HvniiMedeelel() {
+  //   var firstName = "Tuuduu";
+  //   console.log(firstName + " " + lastName);
+  //   alert("Хүний мэдээлэл function хэсгээс дуудаж байна.");
   // }
+  // // }
 
-  var numb = 1;
+  // // eslint-disable-next-line no-undef
+  // console.log(lastName + " gg");
 
-  console.log("Battery " + numb);
+  // HvniiMedeelel();
+
+  // console.log("Battery " + lastName);
+
+  const a = null;
+
+  console.log("fsdf", a);
 
   return (
     <div className=" w-full h-screen flex relative items-center justify-center bg-red-700">
